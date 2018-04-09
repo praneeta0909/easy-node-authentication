@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
 
-        checkout scm
+        git clone https://github.com/praneeta0909/easy-node-authentication.git
     }
 
     stage('Build image') {
