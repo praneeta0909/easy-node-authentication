@@ -1,7 +1,7 @@
 version: "3"
 services:
   web:
-    image: hagaik
+    image: praneeta0909/hagaik
     build: .
     deploy:
       replicas: 1
