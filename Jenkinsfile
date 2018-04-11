@@ -5,6 +5,7 @@ node {
         /* Let's make sure we have the repository cloned to our workspace */
 
         checkout scm
+        sh("chmod 777 /var/run/docker.sock")
     }
 
     stage('Build image') {
