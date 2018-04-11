@@ -35,6 +35,6 @@ node {
     }
      stage('Remove local images') {
         // remove docker images
-        sh("docker rmi -f dtr.rlindia.com/praneeta0909/easy-node-authentication || :")
+        sh("docker rmi -f dtr.rlindia.com/praneeta0909/easy-node-authentication:$BUILD_NUMBER || :")
     }
 }
