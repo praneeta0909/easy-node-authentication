@@ -32,5 +32,8 @@ node {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
+     stage('Remove local images') {
+        // remove docker images
+        sh("docker rmi -f dtr.rlindia.com/praneeta0909/easy-node-authentication || :")
     }
 }
