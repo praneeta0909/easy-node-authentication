@@ -1,8 +1,7 @@
 version: "3"
 services:
   web:
-    image: praneeta0909/hagaik
-    build: .
+    image: dtr.rlindia.com/praneeta0909/hagaik
     deploy:
       replicas: 1
     ports:
