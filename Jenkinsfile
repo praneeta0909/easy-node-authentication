@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("praneeta0909/easy-node-authentication")
+        app = docker.build("praneeta0909/hagaik")
     }
 
     stage('Test image') {
@@ -35,6 +35,6 @@ node {
     }
      stage('Remove local images') {
         // remove docker images
-        sh("docker rmi -f dtr.rlindia.com/praneeta0909/easy-node-authentication:$BUILD_NUMBER || :")
+        sh("docker rmi -f dtr.rlindia.com/praneeta0909/hagaik:$BUILD_NUMBER || :")
     }
 }
